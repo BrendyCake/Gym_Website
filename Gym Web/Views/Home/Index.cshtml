@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to Gym Tracking Website</h1>
+    <p class="lead">Track your workouts, food intake and see your progress.</p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Workouts</h2>
+        <p>Keep track of your workouts by logging them into the system. You can also view your past workouts and track your progress.</p>
+        <a class="btn btn-primary" href="@Url.Action("Workouts", "Home")">View Workouts »</a>
+    </div>
+    <div class="col-md-4">
+        <h2>Food</h2>
+        <p>Log your food intake and keep track of your calories. The system will provide you with nutritional information and help you achieve your goals.</p>
+        <a class="btn btn-primary" href="@Url.Action("Food", "Home")">View Food »</a>
+    </div>
+    <div class="col-md-4">
+        <h2>Stats</h2>
+        <p>View your progress over time and see how you are doing compared to your goals. The system provides charts and graphs to help you visualize your progress.</p>
+        <a class="btn btn-primary" href="#">View Stats »</a>
+    </div>
+</div>
+<footer class="mt-5">
+    <p>&copy; 2023 Gym Tracking Website</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
